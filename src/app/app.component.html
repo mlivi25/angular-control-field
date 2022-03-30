@@ -1,0 +1,10 @@
+<div [formGroup]="form">
+  <choose-quantity
+    [increment]="10"
+    formControlName="totalQuantity"
+  ></choose-quantity>
+
+  <div>
+    <button (click)="getValue()">Test</button>
+  </div>
+</div>
