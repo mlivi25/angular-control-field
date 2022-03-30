@@ -19,6 +19,7 @@ export class AppComponent {
 
   getValue() {
     alert(JSON.stringify(this.form.value));
+    alert(this.form.valid);
   }
 
   constructor(private fb: FormBuilder) {}

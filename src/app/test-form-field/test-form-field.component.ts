@@ -10,7 +10,13 @@ import {
 
 @Component({
   selector: 'choose-quantity',
-  templateUrl: 'test-form-field.component.html',
+  template: `
+     <div class="choose-quantity">
+        <button (click)="onRemove()" color="primary">minus_box</button>
+        <div class="quantity">{{quantity}}</div>
+        <button (click)="onAdd()" color="primary">add_box</button>
+     </div>
+`,
   styleUrls: ['test-form-field.component.css'],
   providers: [
     {
